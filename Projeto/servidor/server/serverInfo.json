@@ -1,0 +1,10 @@
+{
+  "smtp": {
+    "host": "smtp.office365.com",
+    "port": 587,
+    "auth": {
+      "user": null,
+      "pass": null
+    }
+  }
+}

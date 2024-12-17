@@ -1,0 +1,190 @@
+/* Container that the entire UI is in. */
+
+.toolbar {
+  border-bottom: 1px solid #e0e0e0;
+  padding-top: 8px;
+  padding-left: 4px;
+}
+
+#navBar {
+  margin-top: 7px;
+  
+  display: grid;
+  grid-template-columns: 52% 16% 16% 16%;
+  
+  /* align-items: center;
+  justify-items: center; */
+}
+
+
+#nameOfApp {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 27px;
+  align-items: start;
+  margin-left: 10px;
+  color: white;
+}
+
+
+
+.centerViews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #e0e0e0;
+}
+
+#contactForm {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-items: center;
+}
+
+#sendEmailForma {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-items: center;
+}
+
+/*---------------------------------
+
+
+/* Configuração principal */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Garantir que o HTML e o body ocupem 100% da altura da tela */
+  font-family: Arial, sans-serif;
+  background: linear-gradient(0deg, #000, #333);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+/* Animação de fundo */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch; /* Esticar as seções para ocupar toda a altura */
+  height: 100vh; /* Ocupar toda a altura da viewport */
+  width: 100vw; /* Ocupar toda a largura da viewport */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para a seção de registro */
+.register-section {
+  flex: 1;
+  background-color: #2d4ca3; /* Azul escuro */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.register-section h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.register-section p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.register-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: white;
+  color: #2d4ca3;
+}
+
+/* Estilos para a seção de login */
+.login-section {
+  flex: 1;
+  background-color: #000; /* Preto */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 400px;
+}
+
+.login-section input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-section button {
+  padding: 10px;
+  background-color: #2d4ca3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-section button:hover {
+  background-color: #1a346b;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .register-section,
+  .login-section {
+    flex: none;
+    width: 100%;
+    height: 50%; /* Ocupam 50% cada na visualização vertical */
+  }
+}

@@ -1,0 +1,55 @@
+
+Pasta: cliente
+- dist/
+  - index.html
+  - main.css
+  - main.js
+- node_modules/
+- src/
+  - code/
+    - components/
+      - BaseLayout.tsx
+      - ContactList.tsx
+      - ContactView.tsx
+      - LoginView.tsx
+      - MailboxList.tsx
+      - MessageList.tsx
+      - MessageView.tsx
+      - Toolbar.tsx
+      - WelcomeView.tsx
+    - config.ts
+    - Contacts.ts
+    - login.ts
+    - main.tsx
+    - SMTP.ts
+    - state.ts
+  - css/
+  - index.ts
+- .babelrc
+- package.json
+- package-lock.json
+- postcss.config.js
+- README.md
+- tsconfig.json
+- webpack.config.js
+
+Pasta: servidor
+- build/
+  - contacts.js
+  - login.js
+  - main.js
+  - serverInfo.js
+  - SMTP.js
+- node_modules/
+- server/
+  - serverInfo.json
+- src/
+  - contacts.ts
+  - login.ts
+  - main.ts
+  - serverInfo.ts
+  - SMTP.ts
+- comandos.docx
+- package.json
+- package-lock.json
+- tsconfig.json
